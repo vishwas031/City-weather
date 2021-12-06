@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Rain Cloud</title>
+  </head>
+  <body
+    class="
+      font-body
+      flex
+      text-white
+      justify-center
+      bg-back-img bg-cover
+      backdrop-filter backdrop-blur-sm
+    "
+  >
+    <main
+      class="bg-back-img w-screen md:w-1/2 h-screen text-center p-12 bg-cover"
+    >
+      <div
+        id="search-bar"
+        class="flex justify-center items-center gap-2 md:m-5"
+      >
+        <input
+          class="
+            text-xl text-black
+            px-2
+            py-1
+            rounded-md
+            border-b-4 border-r-4 border-green-700
+            outline-none
+            w-full
+            sm:w-2/3
+          "
+        />
+        <svg
+          class="w-6 h-6 inline"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          ></path>
+        </svg>
+      </div>
+      <div
+        class="
+          text-3xl
+          font-bold
+          mt-20
+          mb-1
+          md:text-4xl
+          xl:text-5xl xl:mt-36
+          md:mb-3
+          sm:text-4xl
+        "
+        id="location"
+      >
+        Mumbai, India
+      </div>
+      <div id="date" class="text-xl md:text-2xl">Monday 6 Dec 2021</div>
+      <div
+        id="cur-temp"
+        class="
+          text-5xl
+          m-10
+          sm:text-6xl
+          md:text-7xl
+          xxl:text-8xl
+          font-bold
+          xl:m-14
+        "
+      >
+        20°C
+      </div>
+      <div id="weather" class="text-3xl font-bold italic md:text-4xl">Rain</div>
+      <div id="min-max" class="text-2xl mt-3 md:text-3xl">15°C/25°C</div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

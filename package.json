@@ -1,0 +1,23 @@
+{
+  "name": "rain-cloud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/style.css -o public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishwas031/Rain-Cloud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishwas031/Rain-Cloud/issues"
+  },
+  "homepage": "https://github.com/vishwas031/Rain-Cloud#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.19"
+  }
+}
