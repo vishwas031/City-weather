@@ -20,11 +20,9 @@
     <main
       class="bg-back-img w-screen md:w-1/2 h-screen text-center p-12 bg-cover"
     >
-      <div
-        id="search-bar"
-        class="flex justify-center items-center gap-2 md:m-5"
-      >
+      <div class="flex justify-center items-center gap-2 md:m-5">
         <input
+          spellcheck="false"
           class="
             text-xl text-black
             px-2
@@ -35,8 +33,10 @@
             w-full
             sm:w-2/3
           "
+          id="search-bar"
         />
         <svg
+          id="search-icon"
           class="w-6 h-6 inline"
           fill="none"
           stroke="currentColor"
@@ -61,12 +61,20 @@
           xl:text-5xl xl:mt-36
           md:mb-3
           sm:text-4xl
+          transition
+          ease-in-out
+          duration-500
+          transform
+          hover:scale-110
+          text-gray-600
         "
         id="location"
       >
         Mumbai, India
       </div>
-      <div id="date" class="text-xl md:text-2xl">Monday 6 Dec 2021</div>
+      <div id="date" class="text-xl md:text-2xl text-gray-400">
+        Monday 6 Dec 2021
+      </div>
       <div
         id="cur-temp"
         class="
@@ -79,11 +87,11 @@
           xl:m-14
         "
       >
-        20°C
+        30°C
       </div>
-      <div id="weather" class="text-3xl font-bold italic md:text-4xl">Rain</div>
+      <div id="climate" class="text-3xl font-bold italic md:text-4xl">Rain</div>
       <div id="min-max" class="text-2xl mt-3 md:text-3xl">15°C/25°C</div>
     </main>
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
