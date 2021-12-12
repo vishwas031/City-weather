@@ -1,4 +1,4 @@
-import {api} from './var.js';
+import {API_KEY,API_BASE} from './var.js';
 
 var searchBar_ = document.querySelector("#search-bar") ;
 var loca_ = document.querySelector("#location") ;
@@ -24,7 +24,7 @@ function selectQuery (e){
 }
 
 function getResults(query){
-    fetch(`${api.base}weather?q=${query}&appid=${api.key}`)
+    fetch(`${API_BASE}weather?q=${query}&appid=${API_KEY}`)
     .then(weather =>{
         return weather.json();
     }).then (displayResults)
@@ -32,7 +32,6 @@ function getResults(query){
 
 
 function displayResults (weather){
-    console.log(weather)
     loca_.innerText = `${weather.name}, ${weather.sys.country}`;
     curTemp_.innerText = `${Math.round(weather.main.temp - 273.15)}°C`;
     climate_.innerText = `${weather.weather[0].main}`;
