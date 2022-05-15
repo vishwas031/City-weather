@@ -1,5 +1,4 @@
 import {API_KEY,API_BASE} from './var.js';
-
 var searchBar_ = document.querySelector("#search-bar") ;
 var loca_ = document.querySelector("#location") ;
 var date_ = document.querySelector("#date") ;

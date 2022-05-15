@@ -6,16 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./public/style.css" />
     <title>Rain Cloud</title>
+    <script
+      type="text/javascript"
+      src="http://requirejs.org/docs/release/2.3.2/minified/require.js"
+    ></script>
   </head>
   <body
-    class="
-      font-body
-      flex
-      text-white
-      justify-center
-      bg-back-img bg-cover
-      backdrop-filter backdrop-blur-sm
-    "
+    class="font-body flex text-white justify-center bg-back-img bg-cover backdrop-filter backdrop-blur-sm"
   >
     <main
       class="bg-back-img w-screen md:w-1/2 h-screen text-center p-12 bg-cover"
@@ -24,16 +21,7 @@
         <input
           spellcheck="false"
           placeholder="location..."
-          class="
-            text-xl text-black
-            px-2
-            py-1
-            rounded-md
-            border-b-4 border-r-4 border-green-700
-            outline-none
-            w-full
-            sm:w-2/3
-          "
+          class="text-xl text-black px-2 py-1 rounded-md border-b-4 border-r-4 border-green-700 outline-none w-full sm:w-2/3"
           id="search-bar"
         />
         <svg
@@ -53,22 +41,7 @@
         </svg>
       </div>
       <div
-        class="
-          text-3xl
-          font-bold
-          mt-20
-          mb-1
-          md:text-4xl
-          xl:text-5xl xl:mt-36
-          md:mb-3
-          sm:text-4xl
-          transition
-          ease-in-out
-          duration-500
-          transform
-          hover:scale-110
-          text-gray-600
-        "
+        class="text-3xl font-bold mt-20 mb-1 md:text-4xl xl:text-5xl xl:mt-36 md:mb-3 sm:text-4xl transition ease-in-out duration-500 transform hover:scale-110 text-gray-600"
         id="location"
       >
         Mumbai, India
@@ -78,21 +51,13 @@
       </div>
       <div
         id="cur-temp"
-        class="
-          text-5xl
-          m-10
-          sm:text-6xl
-          md:text-7xl
-          xxl:text-8xl
-          font-bold
-          xl:m-14
-        "
+        class="text-5xl m-10 sm:text-6xl md:text-7xl xxl:text-8xl font-bold xl:m-14"
       >
         30°C
       </div>
       <div id="climate" class="text-3xl font-bold italic md:text-4xl">Rain</div>
       <div id="min-max" class="text-2xl mt-3 md:text-3xl">15°C/25°C</div>
     </main>
-    <script type="module" src="./public/index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
